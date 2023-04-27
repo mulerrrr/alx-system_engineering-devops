@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Parse apache log file and ordered from the greatest to the lowest number of IP occurrences
+file="apache-access.log"
+awk '{print $1, $9}' $file|sort|uniq -c|sort -nr 
+
