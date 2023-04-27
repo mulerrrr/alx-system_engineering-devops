@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Displays Holberton School 10 times with a until loop
+i=9
+until ((i < 0))
+do
+    echo "Best School"
+    i=$((i - 1))
+done
