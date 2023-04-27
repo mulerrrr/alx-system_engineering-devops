@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Displays Best School 20 times with other words in lines 4, 9, 17
+I=1
+while [ $I -lt 21 ]
+do
+    echo "$I"
+    case $I in
+        4)
+        echo "bad luck from China"
+        ;;
+        9)
+        echo "bad luck from Japan"
+        ;;
+        17)
+        echo "bad luck from Italy"
+        ;;
+    esac
+    let I++
+done

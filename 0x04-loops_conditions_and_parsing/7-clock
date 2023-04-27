@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Display the clock hours
+I=1
+HOUR=1
+echo "Hour: 0"
+while [ $I -lt 60 ]
+do
+    echo "$I"
+    if [ $HOUR -eq 13 -a $I -eq 59 ]
+    then
+        break
+    elif [ $I -eq 59 ]
+    then
+        echo "Hour: $HOUR"
+        let HOUR++
+        I=0
+    fi
+    let I++
+done
