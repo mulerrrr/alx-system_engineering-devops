@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#list processes in that have the word bash in user oriented format
+# shellcheck disable=SC2009
+ps u -AH | grep "bash"
+
