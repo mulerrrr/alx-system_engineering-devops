@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Create an SSH key pair
+
+ssh-keygen -f holberton -N betty -b 4096

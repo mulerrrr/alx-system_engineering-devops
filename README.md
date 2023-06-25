@@ -1,1 +1,1 @@
-this repo is about vi scripts
+0x0B. SSH
