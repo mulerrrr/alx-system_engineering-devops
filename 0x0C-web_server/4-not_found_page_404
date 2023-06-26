@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Not found error_page configuration
+sudo apt-get update
+sudo apt-get -y install nginx
+echo "Ceci n'est pas une page" > /var/www/html/404.html
+# set redirection to 404
+sed -i '/listen 80 default_server/a error_page 404 /404.html;' /etc/nginx/sites-available/default
+service nginx reload
+service nginx start
